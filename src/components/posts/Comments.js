@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Replay from "./Replay";
 
 const Comments = () => {
+  const [dot, setDot] = useState(false);
+  const [replay, setReplay] = useState(false);
+
   return (
     <div className="comments">
       <form className="form">
@@ -16,18 +19,31 @@ const Comments = () => {
           alt=""
         />
         <div className="comment-text">
-          <p className="text">
-            <b>Sabuj Hasan Sarker</b> Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Quod, molestiae ipsam! Similique sunt, cumque
-            ipsum voluptates quisquam saepe, non amet voluptate porro
-            reprehenderit, laudantium eligendi deserunt hic ea natus aliquam!
-          </p>
-          <p> just Now</p>
+          <div className="flex">
+            <p className="text">
+              <b>Sabuj Hasan Sarker</b> Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Quod, molestiae ipsam! Similique sunt, cumque
+              ipsum voluptates quisquam saepe, non amet voluptate porro
+              reprehenderit, laudantium eligendi deserunt hic ea natus aliquam!
+            </p>
+            <p className="dot" onClick={(e) => setDot(!dot)}>
+              ...
+            </p>
+          </div>
+          {dot && (
+            <div className="dot-body">
+              <p>Delete</p>
+              <p onClick={(e) => setReplay(true)}>Replay</p>
+            </div>
+          )}
+          <p>just Now</p>
         </div>
       </div>
-      <div className="replay-section">
-        <Replay />
-      </div>
+      {replay && (
+        <div className="replay-section">
+          <Replay />
+        </div>
+      )}
     </div>
   );
 };

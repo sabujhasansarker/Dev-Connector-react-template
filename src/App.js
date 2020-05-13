@@ -21,7 +21,7 @@ const App = () => {
       <Switch>
         <Route exact path="/register" component={RegisterForm} />
         <Route exact path="/login" component={LoginForm} />
-        <Route exact path="/usersetting" component={UserForm} />
+        <Route exact path="/setting" component={UserForm} />
         <Route exact path="/create-profile" component={ProfileForm} />
         <Route exact path="/create-education" component={EducationPopup} />
         <Route exact path="/create-experience" component={ExperiencePopup} />

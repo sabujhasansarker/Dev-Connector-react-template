@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="left">
         <ul className="d-flex">
           <li>
-            <Link to="/:username" className="d-flex">
+            <Link to="/profile" className="d-flex">
               <img
                 className="userimage"
                 src="/uploads/2017-03-20-18-36-07-721.jpg"
@@ -33,7 +33,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="profile">
+            <Link to="/logout">
               <img src={logoutimg} alt="logo" />
             </Link>
           </li>
@@ -62,6 +62,7 @@ const Navbar = () => {
   return (
     <header>
       <nav className="container d-flex">{gast}</nav>
+      <nav className="container d-flex">{auth}</nav>
     </header>
   );
 };

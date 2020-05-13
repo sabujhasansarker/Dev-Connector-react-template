@@ -147,3 +147,41 @@
 .replay-section {
   margin-left: 65px;
 }
+.comments {
+  margin-right: 30px;
+  position: relative;
+  z-index: 1;
+}
+.dot-body {
+  position: absolute;
+  right: -13px;
+  background: #2c2c2c;
+  padding: 12px;
+  z-index: 9;
+  padding-top: 45px;
+  color: white;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: -47px;
+  -webkit-clip-path: polygon(
+    65% 24%,
+    76% 7%,
+    85% 23%,
+    100% 23%,
+    100% 100%,
+    0 100%,
+    0 25%
+  );
+  clip-path: polygon(
+    65% 24%,
+    76% 7%,
+    85% 23%,
+    100% 23%,
+    100% 100%,
+    0 100%,
+    0 25%
+  );
+  p {
+    cursor: pointer;
+  }
+}

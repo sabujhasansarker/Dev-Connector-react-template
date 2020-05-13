@@ -5,7 +5,7 @@ const Replay = () => {
     <div className="comments">
       <form className="form">
         <div className="form-group">
-          <input type="text" placeholder="Enter your comment" />
+          <input type="text" placeholder="Enter your Replay" />
         </div>
       </form>
       <div className="comment-body">

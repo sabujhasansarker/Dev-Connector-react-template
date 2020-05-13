@@ -12,6 +12,7 @@ import ProfileForm from "./components/forms/ProfileForm";
 import EducationPopup from "./components/forms/EducationPopup";
 import ExperiencePopup from "./components/forms/ExperiencePopup";
 import Posts from "./components/posts/Posts";
+import Profile from "./components/profile/Profile";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route exact path="/create-profile" component={ProfileForm} />
         <Route exact path="/create-education" component={EducationPopup} />
         <Route exact path="/create-experience" component={ExperiencePopup} />
+        <Route exact path="/profile" component={Profile} />
         <Route exact path="/" component={Posts} />
       </Switch>
     </Router>

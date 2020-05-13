@@ -1,0 +1,81 @@
+.profile {
+  display: flex;
+  .left {
+    background: whitesmoke;
+    height: 100vh;
+    padding: 20px;
+    width: 22%;
+    position: fixed;
+    .svg-img {
+      margin: 0px 10px;
+    }
+    .social-icons {
+      margin-top: 50px;
+    }
+    .intro {
+      .header {
+        margin-bottom: 30px;
+        position: relative;
+        .profile-pic {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          margin: 0 auto;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+        }
+        .svg-img {
+          float: right;
+          position: absolute;
+          right: 50px;
+        }
+        h2 {
+          margin: 10px 0px;
+        }
+      }
+    }
+    .text {
+      font-weight: 300;
+    }
+    .flex {
+      margin: 15px 0px;
+      align-items: flex-start;
+    }
+    .skills p {
+      text-transform: uppercase;
+    }
+    .form {
+      margin: 0px;
+      padding: 0;
+      width: 100%;
+      .form-group {
+        input,
+        textarea {
+          background: white;
+          width: 100%;
+          padding: 5px;
+          margin: 0;
+        }
+      }
+      .text {
+        display: flex;
+        font-size: 14px;
+        margin-top: 5px;
+        p {
+          text-transform: capitalize;
+          cursor: pointer;
+          &:last-child {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+  .right {
+    margin-left: 25%;
+  }
+}
+.edit-icon {
+  cursor: pointer;
+}

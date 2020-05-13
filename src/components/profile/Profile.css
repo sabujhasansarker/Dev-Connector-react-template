@@ -1,0 +1,105 @@
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile .left {
+  background: whitesmoke;
+  height: 100vh;
+  padding: 20px;
+  width: 22%;
+  position: fixed;
+}
+
+.profile .left .svg-img {
+  margin: 0px 10px;
+}
+
+.profile .left .social-icons {
+  margin-top: 50px;
+}
+
+.profile .left .intro .header {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.profile .left .intro .header .profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile .left .intro .header .svg-img {
+  float: right;
+  position: absolute;
+  right: 50px;
+}
+
+.profile .left .intro .header h2 {
+  margin: 10px 0px;
+}
+
+.profile .left .text {
+  font-weight: 300;
+}
+
+.profile .left .flex {
+  margin: 15px 0px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.profile .left .skills p {
+  text-transform: uppercase;
+}
+
+.profile .left .form {
+  margin: 0px;
+  padding: 0;
+  width: 100%;
+}
+
+.profile .left .form .form-group input,
+.profile .left .form .form-group textarea {
+  background: white;
+  width: 100%;
+  padding: 5px;
+  margin: 0;
+}
+
+.profile .left .form .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.profile .left .form .text p {
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.profile .left .form .text p:last-child {
+  margin-left: 10px;
+}
+
+.profile .right {
+  margin-left: 25%;
+}
+
+.edit-icon {
+  cursor: pointer;
+}
+/*# sourceMappingURL=Profile.css.map */

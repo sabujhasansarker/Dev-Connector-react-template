@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --primary-color: #2c2c2c;
+  --from-color: #f5f5f5;
+  --success: #28a745;
+  --denger: #dc3545;
+}
+
+/* Common css  */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.125rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  border-radius: 4px;
+  background: var(--primary-color) !important;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px !important;
+  width: 80px !important;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn-large {
+  width: 120px !important;
+  padding: 15px !important;
+}
+
+.btn-save {
+  background: #00a8b0 !important;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 1.39;
+}
+.text a {
+  color: #03a9f4;
+}
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+
+/* Alert */
+.alert-container {
+  position: fixed;
+  width: 100%;
+}
+
+.alert {
+  border-radius: 5px;
+  padding: 20px 25px;
+  margin-top: 20px;
+  width: 60%;
+  font-size: 1em;
+  font-weight: 300;
+}
+.alert > img {
+  width: 20px;
+  cursor: pointer;
+}
+.success {
+  background: var(--success) !important;
+}
+.danger {
+  background: var(--denger) !important;
+}
+
+/* text */
+.t-3 {
+  font-weight: 300;
+}
+
+/* Svg image */
+.svg-img {
+  width: 20px;
+}
+
+/* From */
+
+textarea {
+  resize: none;
+}
+
+.card {
+  background: white;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.form {
+  padding-top: 60px;
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+}
+.form .form-group .add-social-btn {
+  width: 40%;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.form .d-flex input:last-child {
+  margin-left: 10px;
+}
+
+.form .form-group select {
+  padding: 15px;
+  background: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.form .form-group .svg-img {
+  width: 30px;
+}
+
+.form .form-group input,
+.form .form-group textarea {
+  padding: 15px;
+  background: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  width: 95.5%;
+  margin: 10px 0px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
+}
+.form .form-group input::-webkit-input-placeholder,
+.form .form-group textarea::-webkit-input-placeholder {
+  color: black;
+}
+
+.form .form-group input:-ms-input-placeholder,
+.form .form-group textarea:-ms-input-placeholder {
+  color: black;
+}
+
+.form .form-group input::-ms-input-placeholder,
+.form .form-group textarea::-ms-input-placeholder {
+  color: black;
+}
+
+.form .form-group input::placeholder,
+.form .form-group textarea::placeholder {
+  color: black;
+}
+
+.form .form-group input:active {
+  padding-left: 15px;
+}
+
+input[type="checkbox"] {
+  width: 25px !important;
+  margin: 20px 0px 40px 0px !important;
+}
+
+/* Popup */
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-content {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 15%;
+  margin: auto;
+  border-radius: 5px;
+  background: white;
+  bottom: 10%;
+  overflow: auto;
+  padding: 20px 0px;
+}
+
+/* Scrolle */
+/* width */
+.popup ::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2c2c2c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #19b0b8;
+}
+
+/* Sadwo */
+.shadow {
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.user-head-image {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.user-head p {
+  font-weight: 300;
+}

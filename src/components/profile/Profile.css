@@ -4,6 +4,10 @@
   display: flex;
 }
 
+.profile a {
+  color: black;
+}
+
 .profile .left {
   background: whitesmoke;
   height: 100vh;
@@ -97,9 +101,18 @@
 
 .profile .right {
   margin-left: 25%;
+  width: 74.5%;
 }
 
-.edit-icon {
-  cursor: pointer;
+.profile .right .container.post-container {
+  width: 98%;
+}
+
+.profile .right .card {
+  width: 100%;
+}
+
+.blackfield {
+  height: 120px;
 }
 /*# sourceMappingURL=Profile.css.map */

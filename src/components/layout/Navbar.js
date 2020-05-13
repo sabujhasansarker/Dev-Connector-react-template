@@ -60,10 +60,13 @@ const Navbar = () => {
   );
 
   return (
-    <header>
-      <nav className="container d-flex">{gast}</nav>
-      <nav className="container d-flex">{auth}</nav>
-    </header>
+    <Fragment>
+      <header>
+        <nav className="container d-flex">{gast}</nav>
+        <nav className="container d-flex">{auth}</nav>
+      </header>
+      <div className="blackfield"></div>
+    </Fragment>
   );
 };
 

@@ -1,5 +1,8 @@
 .profile {
   display: flex;
+  a {
+    color: black;
+  }
   .left {
     background: whitesmoke;
     height: 100vh;
@@ -74,8 +77,16 @@
   }
   .right {
     margin-left: 25%;
+    width: 74.5%;
+    .container.post-container {
+      width: 98%;
+    }
+    .card {
+      width: 100%;
+    }
   }
 }
-.edit-icon {
-  cursor: pointer;
+
+.blackfield {
+  height: 120px;
 }

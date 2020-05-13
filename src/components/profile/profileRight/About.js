@@ -1,11 +1,9 @@
 import React from "react";
 
-import "./Profile.css";
-import ProfileIntro from "./profileLeft/ProfileIntro";
-import ProfileNav from "./ProfileNav";
-import Posts from "../posts/Posts";
+import ProfileIntro from "../profileLeft/ProfileIntro";
+import ProfileNav from "../ProfileNav";
 
-const Profile = () => {
+const About = () => {
   return (
     <div className="profile">
       <div className="left">
@@ -13,10 +11,10 @@ const Profile = () => {
       </div>
       <div className="right">
         <ProfileNav />
-        <Posts />
+        <h1>About</h1>
       </div>
     </div>
   );
 };
 
-export default Profile;
+export default About;

@@ -4,6 +4,7 @@ import Replay from "./Replay";
 const Comments = () => {
   const [dot, setDot] = useState(false);
   const [replay, setReplay] = useState(false);
+  const [showDot, setShowDot] = useState(false);
 
   return (
     <div className="comments">
@@ -19,7 +20,11 @@ const Comments = () => {
           alt=""
         />
         <div className="comment-text">
-          <div className="flex">
+          <div
+            className="flex"
+            onMouseEnter={(e) => setShowDot(true)}
+            onMouseLeave={(e) => setShowDot(dot ? true : false)}
+          >
             <p className="text">
               <b>Sabuj Hasan Sarker</b> Lorem ipsum dolor sit, amet consectetur
               adipisicing elit. Quod, molestiae ipsam! Similique sunt, cumque
@@ -27,7 +32,7 @@ const Comments = () => {
               reprehenderit, laudantium eligendi deserunt hic ea natus aliquam!
             </p>
             <p className="dot" onClick={(e) => setDot(!dot)}>
-              ...
+              {showDot && "..."}
             </p>
           </div>
           {dot && (

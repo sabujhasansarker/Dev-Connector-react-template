@@ -151,6 +151,7 @@
   background: whitesmoke;
   padding: 10px;
   margin-bottom: 10px;
+  width: 95%;
 }
 
 .posts .post-body .comments input {

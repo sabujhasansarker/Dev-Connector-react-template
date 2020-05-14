@@ -59,7 +59,7 @@ const Contact = () => {
             )}
           </div>
           {/* Web */}
-          <div className="single-items flex">
+          <div className="single-items  flex">
             <img src={webIcon} className="svg-img" alt="" />
             {webtoggle ? (
               <form className="form">
@@ -98,7 +98,7 @@ const Contact = () => {
               <img src={addIcon} className="svg-img" alt="" />
               <h3>Add Social</h3>
             </div>
-            <div className="single-items flex">
+            <div className="single-items social-input flex">
               {socialtoggle ? (
                 <form className="form">
                   <div className="social">

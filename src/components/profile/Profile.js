@@ -8,9 +8,7 @@ import Posts from "../posts/Posts";
 const Profile = () => {
   return (
     <div className="profile">
-      <div className="left">
-        <ProfileIntro />
-      </div>
+      <div className="left">{window.innerWidth > 769 && <ProfileIntro />}</div>
       <div className="right">
         <ProfileNav />
         <div className="profile-container">

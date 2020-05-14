@@ -87,6 +87,9 @@
     }
     .profile-top-nav {
       background: whitesmoke;
+      position: fixed;
+      width: 100%;
+      z-index: 4;
       ul {
         display: flex;
         align-items: center;
@@ -115,6 +118,9 @@
   color: white;
   text-align: center;
   padding: 15px;
+  position: fixed;
+  width: 100%;
+  z-index: 4;
   h3 {
     font-size: 30px;
   }
@@ -124,14 +130,75 @@
   background: #2c2c2c;
   padding: 21px;
   position: fixed;
-  min-height: 62%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 100%;
   li {
     padding: 20px;
     a {
       color: white;
     }
   }
+}
+
+.about-right {
+  padding-top: 20px;
+  margin-left: 270px;
+}
+.add {
+  align-items: center;
+  margin-bottom: 20px;
+  img {
+    width: 40px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+}
+.single-items {
+  align-items: flex-start;
+  padding: 10px;
+  img {
+    margin-right: 10px;
+  }
+  .edit-delete {
+    font-weight: 300;
+    .text {
+      font-size: 14px;
+      cursor: pointer;
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+  .form {
+    padding: 0;
+    margin: 0em;
+    input {
+      margin: 0;
+      padding: 10px;
+    }
+    .text {
+      display: flex;
+      font-weight: 300;
+    }
+  }
+}
+hr {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: whitesmoke;
+  border: 1px solid;
+}
+
+.about-body {
+  position: relative;
+}
+
+.nav-continer {
+  position: absolute;
+  top: 65px;
+  bottom: 0;
+}
+.blank-65 {
+  height: 60px;
 }

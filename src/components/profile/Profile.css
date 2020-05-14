@@ -115,6 +115,9 @@
 
 .profile .right .profile-top-nav {
   background: whitesmoke;
+  position: fixed;
+  width: 100%;
+  z-index: 4;
 }
 
 .profile .right .profile-top-nav ul {
@@ -150,6 +153,9 @@
   color: white;
   text-align: center;
   padding: 15px;
+  position: fixed;
+  width: 100%;
+  z-index: 4;
 }
 
 .profile-header h3 {
@@ -160,16 +166,7 @@
   background: #2c2c2c;
   padding: 21px;
   position: fixed;
-  min-height: 62%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  min-height: 100%;
 }
 
 .right-nav li {
@@ -178,5 +175,87 @@
 
 .right-nav li a {
   color: white;
+}
+
+.about-right {
+  padding-top: 20px;
+  margin-left: 270px;
+}
+
+.add {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.add img {
+  width: 40px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.single-items {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 10px;
+}
+
+.single-items img {
+  margin-right: 10px;
+}
+
+.single-items .edit-delete {
+  font-weight: 300;
+}
+
+.single-items .edit-delete .text {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.single-items .edit-delete .text:first-child {
+  margin-right: 10px;
+}
+
+.single-items .form {
+  padding: 0;
+  margin: 0em;
+}
+
+.single-items .form input {
+  margin: 0;
+  padding: 10px;
+}
+
+.single-items .form .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 300;
+}
+
+hr {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: whitesmoke;
+  border: 1px solid;
+}
+
+.about-body {
+  position: relative;
+}
+
+.nav-continer {
+  position: absolute;
+  top: 65px;
+  bottom: 0;
+}
+
+.blank-65 {
+  height: 60px;
 }
 /*# sourceMappingURL=Profile.css.map */

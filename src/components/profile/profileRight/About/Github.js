@@ -13,6 +13,9 @@ const Github = () => {
       <div className="right">
         <ProfileNav />
         <AboutNav navTitle="Github" />
+        <div className="about-right">
+          <h1>Github</h1>
+        </div>
       </div>
     </div>
   );

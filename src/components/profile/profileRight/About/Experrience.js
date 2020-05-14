@@ -13,6 +13,9 @@ const Experrience = () => {
       <div className="right">
         <ProfileNav />
         <AboutNav navTitle="Experrience" />
+        <div className="about-right">
+          <h1>Experrience</h1>
+        </div>
       </div>
     </div>
   );

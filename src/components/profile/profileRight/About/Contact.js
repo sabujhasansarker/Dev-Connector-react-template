@@ -13,6 +13,9 @@ const Contact = () => {
       <div className="right">
         <ProfileNav />
         <AboutNav navTitle="Contact and basic info" />
+        <div className="about-right">
+          <h1>Contact</h1>
+        </div>
       </div>
     </div>
   );

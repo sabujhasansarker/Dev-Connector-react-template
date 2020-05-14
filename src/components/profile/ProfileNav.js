@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 
 const ProfileNav = () => {
@@ -25,7 +25,12 @@ const ProfileNav = () => {
       </li>
     </ul>
   );
-  return <nav className="profile-top-nav">{profilefound}</nav>;
+  return (
+    <Fragment>
+      <nav className="profile-top-nav">{profilefound}</nav>
+      <div className="blank-65"></div>
+    </Fragment>
+  );
 };
 
 export default ProfileNav;

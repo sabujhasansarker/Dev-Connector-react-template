@@ -13,6 +13,9 @@ const Education = () => {
       <div className="right">
         <ProfileNav />
         <AboutNav navTitle="Education" />
+        <div className="about-right">
+          <h1>Education</h1>
+        </div>
       </div>
     </div>
   );

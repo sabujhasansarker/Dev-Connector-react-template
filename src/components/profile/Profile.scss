@@ -93,7 +93,6 @@
       ul {
         display: flex;
         align-items: center;
-        justify-content: center;
         li {
           padding: 20px;
           a {
@@ -140,7 +139,7 @@
 }
 
 .about-right {
-  padding-top: 20px;
+  padding: 20px 0px;
   margin-left: 270px;
 }
 .add {
@@ -201,4 +200,14 @@ hr {
 }
 .blank-65 {
   height: 60px;
+}
+
+.single-items {
+  .form input {
+    margin: 10px;
+  }
+}
+
+.m-l-55 {
+  margin-left: 55px;
 }

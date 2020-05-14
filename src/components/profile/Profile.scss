@@ -1,3 +1,9 @@
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
 .profile {
   display: flex;
   a {
@@ -10,16 +16,23 @@
     width: 22%;
     position: fixed;
     z-index: 5;
+    transition: 0.5s all;
     .svg-img {
       margin: 0px 10px;
     }
     .social-icons {
       margin-top: 50px;
+      @include tablet() {
+        margin-top: 15px;
+      }
     }
     .intro {
       .header {
         margin-bottom: 30px;
         position: relative;
+        @include tablet() {
+          margin-bottom: 10px;
+        }
         .profile-pic {
           width: 200px;
           height: 200px;
@@ -45,6 +58,9 @@
     .flex {
       margin: 15px 0px;
       align-items: flex-start;
+      @include tablet() {
+        margin: 10px 0px 0px 0px;
+      }
     }
     .skills p {
       text-transform: uppercase;
@@ -225,4 +241,31 @@ hr {
     margin-top: 5px;
     width: 100px !important;
   }
+}
+
+h4.intro_toggle {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: fixed;
+  background: #2c2c2c;
+  color: white;
+  padding: 9px;
+  font-size: 25px;
+  transition: 0.5s all;
+  z-index: 6;
+}
+.intro_open {
+  padding: 0 !important;
+  padding-top: 20px !important;
+  width: 50% !important;
+  transition: 0.5s all;
+  border-right: 1px solid #2c2c2c;
+  -webkit-box-shadow: 66px 0px 85px 0px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 66px 0px 85px 0px rgba(0, 0, 0, 0.38);
+  box-shadow: 66px 0px 85px 0px rgba(0, 0, 0, 0.38);
+}
+.git-right {
+  margin-left: 10px;
 }

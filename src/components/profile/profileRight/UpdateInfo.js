@@ -12,7 +12,9 @@ const UpdateInfo = () => {
       </div>
       <div className="right">
         <ProfileNav />
-        <ProfileForm />
+        <div className="profile-container">
+          <ProfileForm />
+        </div>
       </div>
     </div>
   );

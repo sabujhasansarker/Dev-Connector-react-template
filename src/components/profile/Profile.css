@@ -14,6 +14,7 @@
   padding: 20px;
   width: 22%;
   position: fixed;
+  z-index: 5;
 }
 
 .profile .left .svg-img {
@@ -100,8 +101,8 @@
 }
 
 .profile .right {
-  margin-left: 25%;
-  width: 74.5%;
+  margin-left: 24%;
+  width: 76%;
 }
 
 .profile .right .container.post-container {
@@ -112,7 +113,70 @@
   width: 100%;
 }
 
+.profile .right .profile-top-nav {
+  background: whitesmoke;
+}
+
+.profile .right .profile-top-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile .right .profile-top-nav ul li {
+  padding: 20px;
+}
+
+.profile .right .profile-top-nav ul li a {
+  padding: 10px;
+}
+
 .blackfield {
   height: 120px;
+}
+
+.profile-container {
+  margin: 25px;
+}
+
+.profile-header {
+  background: #2c2c2c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.profile-header h3 {
+  font-size: 30px;
+}
+
+.right-nav {
+  background: #2c2c2c;
+  padding: 21px;
+  position: fixed;
+  min-height: 62%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right-nav li {
+  padding: 20px;
+}
+
+.right-nav li a {
+  color: white;
 }
 /*# sourceMappingURL=Profile.css.map */

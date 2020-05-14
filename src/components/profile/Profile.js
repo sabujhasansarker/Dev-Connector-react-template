@@ -13,7 +13,9 @@ const Profile = () => {
       </div>
       <div className="right">
         <ProfileNav />
-        <Posts />
+        <div className="profile-container">
+          <Posts />
+        </div>
       </div>
     </div>
   );

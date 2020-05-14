@@ -12,8 +12,13 @@ import EducationPopup from "./components/forms/EducationPopup";
 import ExperiencePopup from "./components/forms/ExperiencePopup";
 import Posts from "./components/posts/Posts";
 import Profile from "./components/profile/Profile";
-import About from "./components/profile/profileRight/About";
+import About from "./components/profile/profileRight/About/About";
 import UpdateInfo from "./components/profile/profileRight/UpdateInfo";
+
+import Education from "./components/profile/profileRight/About/Education";
+import Experrience from "./components/profile/profileRight/About/Experrience";
+import Contact from "./components/profile/profileRight/About/Contact";
+import Github from "./components/profile/profileRight/About/Github";
 
 const App = () => {
   return (
@@ -29,6 +34,14 @@ const App = () => {
         <Route exact path="/create-experience" component={ExperiencePopup} />
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/profile/about" component={About} />
+        <Route exact path="/profile/about/education" component={Education} />
+        <Route exact path="/profile/about/contact-basic" component={Contact} />
+        <Route exact path="/profile/about/github" component={Github} />
+        <Route
+          exact
+          path="/profile/about/experrience"
+          component={Experrience}
+        />
         <Route exact path="/profile/update-profile" component={UpdateInfo} />
         <Route exact path="/" component={Posts} />
       </Switch>

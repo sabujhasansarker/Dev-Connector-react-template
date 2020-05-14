@@ -9,6 +9,7 @@
     padding: 20px;
     width: 22%;
     position: fixed;
+    z-index: 5;
     .svg-img {
       margin: 0px 10px;
     }
@@ -76,17 +77,61 @@
     }
   }
   .right {
-    margin-left: 25%;
-    width: 74.5%;
+    margin-left: 24%;
+    width: 76%;
     .container.post-container {
       width: 98%;
     }
     .card {
       width: 100%;
     }
+    .profile-top-nav {
+      background: whitesmoke;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+          padding: 20px;
+          a {
+            padding: 10px;
+          }
+        }
+      }
+    }
   }
 }
 
 .blackfield {
   height: 120px;
+}
+
+.profile-container {
+  margin: 25px;
+}
+
+.profile-header {
+  background: #2c2c2c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  h3 {
+    font-size: 30px;
+  }
+}
+
+.right-nav {
+  background: #2c2c2c;
+  padding: 21px;
+  position: fixed;
+  min-height: 62%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    padding: 20px;
+    a {
+      color: white;
+    }
+  }
 }

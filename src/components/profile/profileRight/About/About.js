@@ -1,7 +1,8 @@
 import React from "react";
 
-import ProfileIntro from "../profileLeft/ProfileIntro";
-import ProfileNav from "../ProfileNav";
+import ProfileIntro from "../../profileLeft/ProfileIntro";
+import ProfileNav from "../../ProfileNav";
+import AboutNav from "./AboutNav";
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
       </div>
       <div className="right">
         <ProfileNav />
-        <h1>About</h1>
+        <AboutNav navTitle="OverView" />
       </div>
     </div>
   );
